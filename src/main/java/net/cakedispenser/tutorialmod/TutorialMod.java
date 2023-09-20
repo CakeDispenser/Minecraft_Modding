@@ -52,6 +52,9 @@ public class TutorialMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.GLITTERING_GLOWSTONE);
         }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.POWERED_REDSTONE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

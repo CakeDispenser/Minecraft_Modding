@@ -13,6 +13,9 @@ public class ModItems {
     public static final RegistryObject<Item> GLITTERING_GLOWSTONE = ITEMS.register("glittering_glowstone",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> POWERED_REDSTONE = ITEMS.register("powered_redstone",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
