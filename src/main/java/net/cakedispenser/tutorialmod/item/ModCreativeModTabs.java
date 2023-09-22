@@ -20,7 +20,6 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.GLITTERING_GLOWSTONE.get());
                         pOutput.accept(ModItems.POWERED_REDSTONE.get());
-                        pOutput.accept(Items.DIAMOND);
 
 
                     })
