@@ -1,6 +1,7 @@
 package net.cakedispenser.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.cakedispenser.tutorialmod.item.ModCreativeModTabs;
 import net.cakedispenser.tutorialmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class TutorialMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -51,8 +53,6 @@ public class TutorialMod
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.GLITTERING_GLOWSTONE);
-        }
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.POWERED_REDSTONE);
         }
     }
