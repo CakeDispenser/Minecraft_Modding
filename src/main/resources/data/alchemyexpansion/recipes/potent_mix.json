@@ -1,0 +1,22 @@
+{
+  "type":"minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "alchemyexpansion:glittering_glowstone"
+    },
+    {
+      "item": "alchemyexpansion:glittering_glowstone"
+    },
+    {
+      "item": "alchemyexpansion:powered_redstone"
+    },
+    {
+      "item": "alchemyexpansion:powered_redstone"
+    }
+  ],
+  "result": {
+    "item": "alchemyexpansion:potent_mix",
+    "count": 1
+  }
+}

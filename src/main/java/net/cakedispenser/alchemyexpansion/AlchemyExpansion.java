@@ -1,34 +1,30 @@
-package net.cakedispenser.tutorialmod;
+package net.cakedispenser.alchemyexpansion;
 
 import com.mojang.logging.LogUtils;
-import net.cakedispenser.tutorialmod.item.ModCreativeModTabs;
-import net.cakedispenser.tutorialmod.item.ModItems;
-import net.minecraft.client.Minecraft;
-import net.minecraft.world.item.CreativeModeTabs;
+import net.cakedispenser.alchemyexpansion.item.ModCreativeModTabs;
+import net.cakedispenser.alchemyexpansion.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(TutorialMod.MOD_ID)
-public class TutorialMod
+@Mod(AlchemyExpansion.MOD_ID)
+public class AlchemyExpansion
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "tutorialmod";
+    public static final String MOD_ID = "alchemyexpansion";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public TutorialMod()
+    public AlchemyExpansion()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
@@ -51,10 +47,7 @@ public class TutorialMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.GLITTERING_GLOWSTONE);
-            event.accept(ModItems.POWERED_REDSTONE);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -71,9 +64,7 @@ public class TutorialMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
         }
     }
 }
