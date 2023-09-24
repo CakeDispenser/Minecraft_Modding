@@ -3,5 +3,7 @@
   "item.alchemyexpansion.powered_redstone": "Powered Redstone",
   "item.alchemyexpansion.potent_mix": "Potent Mix",
 
+  "item.minecraft.potion.effect.fire_resistance": "Potion of Fire Resistance",
+
   "creativetab.tutorial_tab": "Alchemy Expansion"
 }
