@@ -2,8 +2,11 @@
   "item.alchemyexpansion.glittering_glowstone": "Glittering Glowstone",
   "item.alchemyexpansion.powered_redstone": "Powered Redstone",
   "item.alchemyexpansion.potent_mix": "Potent Mix",
+  "item.alchemyexpansion.golden_quartz": "Golden Quartz",
 
-  "item.minecraft.potion.effect.fire_resistance": "Potion of Fire Resistance",
+  "item.minecraft.potion.effect.absorption": "Potion of Absorption",
+  "item.minecraft.potion.effect.resistance": "Potion of Resistance",
+  "item.minecraft.potion.effect.berserk": "Potion of Berserking",
 
   "creativetab.tutorial_tab": "Alchemy Expansion"
 }

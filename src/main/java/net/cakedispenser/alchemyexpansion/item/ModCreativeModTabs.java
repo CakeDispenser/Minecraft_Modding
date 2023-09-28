@@ -5,8 +5,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.PotionItem;
-import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -22,7 +20,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.GLITTERING_GLOWSTONE.get());
                         pOutput.accept(ModItems.POWERED_REDSTONE.get());
                         pOutput.accept(ModItems.POTENT_MIX.get());
-
+                        pOutput.accept(ModItems.GOLDEN_QUARTZ.get());
 
                     })
                             .build());

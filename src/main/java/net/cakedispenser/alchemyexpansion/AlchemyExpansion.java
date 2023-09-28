@@ -5,7 +5,8 @@ import net.cakedispenser.alchemyexpansion.item.ModCreativeModTabs;
 import net.cakedispenser.alchemyexpansion.item.ModItems;
 import net.cakedispenser.alchemyexpansion.item.ModPotions;
 import net.cakedispenser.alchemyexpansion.util.BBrewingRecipe;
-import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -42,8 +43,8 @@ public class AlchemyExpansion
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
-
     }
+
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(Potions.FIRE_RESISTANCE, ModItems.POWERED_REDSTONE.get(), ModPotions.SUPER_LONG_FIRE_RESISTANCE.get()));
@@ -70,7 +71,21 @@ public class AlchemyExpansion
         BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(Potions.HEALING, ModItems.GLITTERING_GLOWSTONE.get(), ModPotions.SUPER_STRONG_HEALING.get()));
         BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(Potions.HARMING, ModItems.GLITTERING_GLOWSTONE.get(), ModPotions.SUPER_STRONG_HARMING.get()));
 
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(Potions.AWKWARD, ModItems.GOLDEN_QUARTZ.get(), ModPotions.ABSORPTION.get()));
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(ModPotions.ABSORPTION.get(), Items.GLOWSTONE_DUST, ModPotions.STRONG_ABSORPTION.get()));
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(ModPotions.ABSORPTION.get(), ModItems.GLITTERING_GLOWSTONE.get(), ModPotions.SUPER_STRONG_ABSORPTION.get()));
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(ModPotions.ABSORPTION.get(), Items.REDSTONE, ModPotions.LONG_ABSORPTION.get()));
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(ModPotions.ABSORPTION.get(), ModItems.POWERED_REDSTONE.get(), ModPotions.SUPER_LONG_ABSORPTION.get()));
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(ModPotions.ABSORPTION.get(), ModItems.POTENT_MIX.get(), ModPotions.STRONG_LONG_ABSORPTION.get()));
 
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(Potions.AWKWARD, Items.DIAMOND, ModPotions.RESISTANCE.get()));
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(ModPotions.RESISTANCE.get(), Items.GLOWSTONE_DUST, ModPotions.STRONG_RESISTANCE.get()));
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(ModPotions.RESISTANCE.get(), ModItems.GLITTERING_GLOWSTONE.get(), ModPotions.SUPER_STRONG_RESISTANCE.get()));
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(ModPotions.RESISTANCE.get(), Items.REDSTONE, ModPotions.LONG_RESISTANCE.get()));
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(ModPotions.RESISTANCE.get(), ModItems.POWERED_REDSTONE.get(), ModPotions.SUPER_LONG_RESISTANCE.get()));
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(ModPotions.RESISTANCE.get(), ModItems.POTENT_MIX.get(), ModPotions.STRONG_LONG_RESISTANCE.get()));
+
+        BrewingRecipeRegistry.addRecipe(new BBrewingRecipe(Potions.STRENGTH, Items.BLAZE_POWDER, ModPotions.BERSERK.get()));
     }
 
     // Add the example block item to the building blocks tab

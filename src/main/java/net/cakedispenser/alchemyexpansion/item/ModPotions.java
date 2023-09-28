@@ -36,6 +36,24 @@ public class ModPotions {
     public static final RegistryObject<Potion> STRONG_LONG_POISON = POTIONS.register("strong_long_poison", () -> new Potion("poison", new MobEffectInstance(MobEffects.JUMP, 9600, 1)));
     public static final RegistryObject<Potion> SUPER_LONG_WATER_BREATHING = POTIONS.register("super_long_water_breathing", () -> new Potion("water_breathing", new MobEffectInstance(MobEffects.WATER_BREATHING, 25600, 0)));
 
+    public static final RegistryObject<Potion> ABSORPTION = POTIONS.register("absorption", () -> new Potion("absorption", new MobEffectInstance(MobEffects.ABSORPTION, 3600, 0)));
+    public static final RegistryObject<Potion> LONG_ABSORPTION = POTIONS.register("long_absorption", () -> new Potion("absorption", new MobEffectInstance(MobEffects.ABSORPTION, 9600, 0)));
+    public static final RegistryObject<Potion> SUPER_LONG_ABSORPTION = POTIONS.register("super_long_absorption", () -> new Potion("absorption", new MobEffectInstance(MobEffects.ABSORPTION, 25600, 0)));
+    public static final RegistryObject<Potion> STRONG_ABSORPTION = POTIONS.register("strong_absorption", () -> new Potion("absorption", new MobEffectInstance(MobEffects.ABSORPTION, 1800, 1)));
+    public static final RegistryObject<Potion> SUPER_STRONG_ABSORPTION = POTIONS.register("super_strong_absorption", () -> new Potion("absorption", new MobEffectInstance(MobEffects.ABSORPTION, 900, 2)));
+    public static final RegistryObject<Potion> STRONG_LONG_ABSORPTION = POTIONS.register("strong_long_absorption", () -> new Potion("absorption", new MobEffectInstance(MobEffects.ABSORPTION, 9600, 1)));
+
+    public static final RegistryObject<Potion> RESISTANCE = POTIONS.register("resistance", () -> new Potion("resistance", new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 3600, 0)));
+    public static final RegistryObject<Potion> LONG_RESISTANCE = POTIONS.register("long_resistance", () -> new Potion("resistance", new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 0)));
+    public static final RegistryObject<Potion> SUPER_LONG_RESISTANCE = POTIONS.register("super_long_resistance", () -> new Potion("resistance", new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 25600, 0)));
+    public static final RegistryObject<Potion> STRONG_RESISTANCE = POTIONS.register("strong_resistance", () -> new Potion("resistance", new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1800, 1)));
+    public static final RegistryObject<Potion> SUPER_STRONG_RESISTANCE = POTIONS.register("super_strong_resistance", () -> new Potion("resistance", new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 900, 2)));
+    public static final RegistryObject<Potion> STRONG_LONG_RESISTANCE = POTIONS.register("strong_long_resistance", () -> new Potion("resistance", new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9600, 1)));
+
+    public static final RegistryObject<Potion> BERSERK = POTIONS.register("berserk", () -> new Potion("berserk", new MobEffectInstance(MobEffects.DAMAGE_BOOST, 900, 1),
+            new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 900, 0), new MobEffectInstance(MobEffects.HUNGER, 900, 1)));
+
+
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);
     }
