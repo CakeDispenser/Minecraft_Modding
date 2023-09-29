@@ -1,6 +1,7 @@
 package net.cakedispenser.alchemyexpansion;
 
 import com.mojang.logging.LogUtils;
+import net.cakedispenser.alchemyexpansion.block.ModBlocks;
 import net.cakedispenser.alchemyexpansion.item.ModCreativeModTabs;
 import net.cakedispenser.alchemyexpansion.item.ModItems;
 import net.cakedispenser.alchemyexpansion.item.ModPotions;
@@ -36,6 +37,7 @@ public class AlchemyExpansion
 
         ModItems.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);

@@ -1,6 +1,7 @@
 package net.cakedispenser.alchemyexpansion.item;
 
 import net.cakedispenser.alchemyexpansion.AlchemyExpansion;
+import net.cakedispenser.alchemyexpansion.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,6 +22,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.POWERED_REDSTONE.get());
                         pOutput.accept(ModItems.POTENT_MIX.get());
                         pOutput.accept(ModItems.GOLDEN_QUARTZ.get());
+                        pOutput.accept(ModBlocks.SILVER_BLOCK.get().asItem());
 
                     })
                             .build());
