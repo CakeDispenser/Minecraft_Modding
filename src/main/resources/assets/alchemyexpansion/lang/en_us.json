@@ -6,8 +6,18 @@
   "item.alchemyexpansion.silver_ingot": "Silver Ingot",
 
   "item.minecraft.potion.effect.absorption": "Potion of Absorption",
+  "item.minecraft.splash_potion.effect.absorption" : "Splash Potion of Absorption",
+  "item.minecraft.lingering_potion.effect.absorption": "Lingering Potion of Absorption",
+  "item.minecraft.tipped_arrow.effect.absorption": "Arrow of Absorption",
   "item.minecraft.potion.effect.resistance": "Potion of Resistance",
+  "item.minecraft.splash_potion.effect.resistance" : "Splash Potion of Resistance",
+  "item.minecraft.lingering_potion.effect.resistance": "Lingering Potion of Resistance",
+  "item.minecraft.tipped_arrow.effect.resistance": "Arrow of Resistance",
   "item.minecraft.potion.effect.berserk": "Potion of Berserking",
+  "item.minecraft.splash_potion.effect.berserk" : "Splash Potion of Berserking",
+  "item.minecraft.lingering_potion.effect.berserk": "Lingering Potion of Berserking",
+  "item.minecraft.tipped_arrow.effect.berserk": "Arrow of Berserking",
+
   "block.alchemyexpansion.silver_block": "Block of Silver",
 
   "creativetab.tutorial_tab": "Alchemy Expansion"
