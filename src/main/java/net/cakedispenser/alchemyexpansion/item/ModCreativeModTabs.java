@@ -22,6 +22,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.POWERED_REDSTONE.get());
                         pOutput.accept(ModItems.POTENT_MIX.get());
                         pOutput.accept(ModItems.GOLDEN_QUARTZ.get());
+                        pOutput.accept(ModItems.SILVER_INGOT.get());
                         pOutput.accept(ModBlocks.SILVER_BLOCK.get().asItem());
 
                     })

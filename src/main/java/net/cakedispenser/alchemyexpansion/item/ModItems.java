@@ -22,6 +22,9 @@ public class ModItems {
     public static final RegistryObject<Item> GOLDEN_QUARTZ = ITEMS.register("golden_quartz",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
