@@ -24,6 +24,9 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.GOLDEN_QUARTZ.get());
                         pOutput.accept(ModItems.SILVER_INGOT.get());
                         pOutput.accept(ModBlocks.SILVER_BLOCK.get().asItem());
+                        pOutput.accept(ModBlocks.SILVER_ORE.get().asItem());
+                        pOutput.accept(ModBlocks.DEEPSLATE_SILVER_ORE.get().asItem());
+                        pOutput.accept(ModItems.RAW_SILVER.get());
 
                     })
                             .build());

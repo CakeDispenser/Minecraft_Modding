@@ -4,6 +4,7 @@
   "item.alchemyexpansion.potent_mix": "Potent Mix",
   "item.alchemyexpansion.golden_quartz": "Golden Quartz",
   "item.alchemyexpansion.silver_ingot": "Silver Ingot",
+  "item.alchemyexpansion.raw_silver": "Raw Silver",
 
   "item.minecraft.potion.effect.absorption": "Potion of Absorption",
   "item.minecraft.splash_potion.effect.absorption" : "Splash Potion of Absorption",
@@ -19,6 +20,8 @@
   "item.minecraft.tipped_arrow.effect.berserk": "Arrow of Berserking",
 
   "block.alchemyexpansion.silver_block": "Block of Silver",
+  "block.alchemyexpansion.silver_ore": "Silver Ore",
+  "block.alchemyexpansion.deepslate_silver_ore": "Deepslate Silver Ore",
 
   "creativetab.tutorial_tab": "Alchemy Expansion"
 }
