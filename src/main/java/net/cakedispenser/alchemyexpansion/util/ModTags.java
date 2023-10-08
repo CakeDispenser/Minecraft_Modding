@@ -10,7 +10,7 @@ public class ModTags {
 
     public static class Blocks {
 
-        public static final TagKey<Block> VALUABLES = tag("valuables");
+        public static final TagKey<Block> NEEDS_ADAMANTIUM_TOOL = tag("needs_admantium_tool");
 
         public static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(AlchemyExpansion.MOD_ID, name));

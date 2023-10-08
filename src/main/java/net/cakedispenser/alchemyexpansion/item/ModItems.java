@@ -1,7 +1,7 @@
 package net.cakedispenser.alchemyexpansion.item;
 
 import net.cakedispenser.alchemyexpansion.AlchemyExpansion;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -33,6 +33,21 @@ public class ModItems {
 
     public static final RegistryObject<Item> ADAMANTIUM_INGOT = ITEMS.register("adamantium_ingot",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MITHRIL_PICKAXE = ITEMS.register("mithril_pickaxe",
+            () -> new PickaxeItem(ModToolTier.MITHRIL, 1, -2.8f, new Item.Properties()));
+
+    public static final RegistryObject<Item> MITHRIL_AXE = ITEMS.register("mithril_axe",
+            () -> new AxeItem(ModToolTier.MITHRIL, 5, -3.0f, new Item.Properties()));
+
+    public static final RegistryObject<Item> MITHRIL_SHOVEL = ITEMS.register("mithril_shovel",
+            () -> new ShovelItem(ModToolTier.MITHRIL, 1.5f, -3.0f, new Item.Properties()));
+
+    public static final RegistryObject<Item> MITHRIL_SWORD = ITEMS.register("mithril_sword",
+            () -> new SwordItem(ModToolTier.MITHRIL, 3, -2.4f, new Item.Properties()));
+
+    public static final RegistryObject<Item> MITHRIL_HOE = ITEMS.register("mithril_hoe",
+            () -> new HoeItem(ModToolTier.MITHRIL, -4, 0.0f, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

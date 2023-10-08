@@ -8,6 +8,11 @@
   "item.alchemyexpansion.mithril_ingot": "Mithril Ingot",
   "item.alchemyexpansion.adamantium_ingot": "Adamantium Ingot",
 
+  "item.alchemyexpansion.mithril_pickaxe": "Mithril Pickaxe",
+  "item.alchemyexpansion.mithril_axe": "Mithril Axe",
+  "item.alchemyexpansion.mithril_shovel": "Mithril Shovel",
+  "item.alchemyexpansion.mithril_sword": "Mithril Sword",
+  "item.alchemyexpansion.mithril_hoe": "Mithril Hoe",
 
   "item.minecraft.potion.effect.absorption": "Potion of Absorption",
   "item.minecraft.splash_potion.effect.absorption" : "Splash Potion of Absorption",

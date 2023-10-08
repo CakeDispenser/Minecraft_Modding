@@ -29,6 +29,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RAW_SILVER.get());
                         pOutput.accept(ModItems.MITHRIL_INGOT.get());
                         pOutput.accept(ModItems.ADAMANTIUM_INGOT.get());
+                        pOutput.accept(ModItems.MITHRIL_SWORD.get());
+                        pOutput.accept(ModItems.MITHRIL_AXE.get());
+                        pOutput.accept(ModItems.MITHRIL_PICKAXE.get());
+                        pOutput.accept(ModItems.MITHRIL_SHOVEL.get());
+                        pOutput.accept(ModItems.MITHRIL_HOE.get());
 
                     })
                             .build());

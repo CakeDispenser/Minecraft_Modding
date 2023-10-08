@@ -1,0 +1,3 @@
+// 1.20.1	2023-10-08T22:10:42.3902698	Tags for minecraft:block mod id alchemyexpansion
+d4451eb0fc7165bd75865cad7ce736b5b85803bf data/minecraft/tags/blocks/mineable/pickaxe.json
+5f79f2e7f519cd9217c3d36695ef7ffab6907fc7 data/minecraft/tags/blocks/needs_iron_tool.json
