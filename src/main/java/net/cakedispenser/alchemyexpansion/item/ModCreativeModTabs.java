@@ -34,6 +34,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.MITHRIL_PICKAXE.get());
                         pOutput.accept(ModItems.MITHRIL_SHOVEL.get());
                         pOutput.accept(ModItems.MITHRIL_HOE.get());
+                        pOutput.accept(ModItems.ADAMANTIUM_SWORD.get());
+                        pOutput.accept(ModItems.ADAMANTIUM_AXE.get());
+                        pOutput.accept(ModItems.ADAMANTIUM_PICKAXE.get());
+                        pOutput.accept(ModItems.ADAMANTIUM_SHOVEL.get());
+                        pOutput.accept(ModItems.ADAMANTIUM_HOE.get());
 
                     })
                             .build());

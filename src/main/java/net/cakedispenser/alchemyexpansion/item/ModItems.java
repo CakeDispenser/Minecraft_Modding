@@ -47,7 +47,22 @@ public class ModItems {
             () -> new SwordItem(ModToolTier.MITHRIL, 3, -2.4f, new Item.Properties()));
 
     public static final RegistryObject<Item> MITHRIL_HOE = ITEMS.register("mithril_hoe",
-            () -> new HoeItem(ModToolTier.MITHRIL, -4, 0.0f, new Item.Properties()));
+            () -> new HoeItem(ModToolTier.MITHRIL, -3, 0.0f, new Item.Properties()));
+
+    public static final RegistryObject<Item> ADAMANTIUM_PICKAXE = ITEMS.register("adamantium_pickaxe",
+            () -> new PickaxeItem(ModToolTier.ADAMANTIUM, 1, -2.8f, new Item.Properties()));
+
+    public static final RegistryObject<Item> ADAMANTIUM_AXE = ITEMS.register("adamantium_axe",
+            () -> new AxeItem(ModToolTier.ADAMANTIUM, 5, -3.0f, new Item.Properties()));
+
+    public static final RegistryObject<Item> ADAMANTIUM_SHOVEL = ITEMS.register("adamantium_shovel",
+            () -> new ShovelItem(ModToolTier.ADAMANTIUM, 1.5f, -3.0f, new Item.Properties()));
+
+    public static final RegistryObject<Item> ADAMANTIUM_SWORD = ITEMS.register("adamantium_sword",
+            () -> new SwordItem(ModToolTier.ADAMANTIUM, 3, -2.4f, new Item.Properties()));
+
+    public static final RegistryObject<Item> ADAMANTIUM_HOE = ITEMS.register("adamantium_hoe",
+            () -> new HoeItem(ModToolTier.ADAMANTIUM, -5, 0.0f, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

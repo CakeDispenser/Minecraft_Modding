@@ -1,5 +1,10 @@
-// 1.20.1	2023-10-08T22:36:29.1968368	Item Models: alchemyexpansion
+// 1.20.1	2023-10-09T21:38:04.8583521	Item Models: alchemyexpansion
+59779f25a7eeaa7fdc17e0c95a48f454485f8596 assets/alchemyexpansion/models/item/adamantium_axe.json
+4f239edaa31a5d621d5dd52740be21411e28212c assets/alchemyexpansion/models/item/adamantium_hoe.json
 5ee9119578e36b3c7e26361c185754f7cd276d17 assets/alchemyexpansion/models/item/adamantium_ingot.json
+ea6f4502f59f4f1fe76e9f96b6111c79b38bf5fe assets/alchemyexpansion/models/item/adamantium_pickaxe.json
+c75f0b5efac8e46e88088c5ccfc6a6d181b73263 assets/alchemyexpansion/models/item/adamantium_shovel.json
+04d22624bc9540d8fd8a76ceb576c94a660e19de assets/alchemyexpansion/models/item/adamantium_sword.json
 9f97625507ea6b1d5a65e5df400ff56982bb120e assets/alchemyexpansion/models/item/glittering_glowstone.json
 74c1e0b3e45c36e17659f97a9f4e896cf00e7525 assets/alchemyexpansion/models/item/golden_quartz.json
 db480e120cff6b7ae9c0e0feaeda6a11f797039b assets/alchemyexpansion/models/item/mithril_axe.json

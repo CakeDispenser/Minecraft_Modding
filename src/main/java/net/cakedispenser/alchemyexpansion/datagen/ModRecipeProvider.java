@@ -26,11 +26,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+
+        // Ore smelting/blasting
         oreBlasting(pWriter, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 0.25f, 100,
                 "silver");
         oreSmelting(pWriter, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 0.25f, 200,
                 "silver");
 
+        // SHAPED
+        // Materials recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SILVER_BLOCK.get())
                 .pattern("XXX")
                 .pattern("XXX")
@@ -48,7 +52,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.QUARTZ), has(Items.QUARTZ))
                 .save(pWriter);
 
+        // Tools and weapons recipes
 
+        // Mithril
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_PICKAXE.get())
                 .pattern("XXX")
                 .pattern(" # ")
@@ -58,6 +64,90 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_SHOVEL.get())
+                .pattern(" X ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('X', ModItems.MITHRIL_INGOT.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_AXE.get())
+                .pattern("XX ")
+                .pattern("X# ")
+                .pattern(" # ")
+                .define('X', ModItems.MITHRIL_INGOT.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_HOE.get())
+                .pattern("XX ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('X', ModItems.MITHRIL_INGOT.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MITHRIL_SWORD.get())
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" # ")
+                .define('X', ModItems.MITHRIL_INGOT.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        // Adamantium
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ADAMANTIUM_PICKAXE.get())
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('X', ModItems.ADAMANTIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ADAMANTIUM_INGOT.get()), has(ModItems.ADAMANTIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ADAMANTIUM_SHOVEL.get())
+                .pattern(" X ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('X', ModItems.ADAMANTIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ADAMANTIUM_INGOT.get()), has(ModItems.ADAMANTIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ADAMANTIUM_AXE.get())
+                .pattern("XX ")
+                .pattern("X# ")
+                .pattern(" # ")
+                .define('X', ModItems.ADAMANTIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ADAMANTIUM_INGOT.get()), has(ModItems.ADAMANTIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ADAMANTIUM_HOE.get())
+                .pattern("XX ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('X', ModItems.ADAMANTIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ADAMANTIUM_INGOT.get()), has(ModItems.ADAMANTIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ADAMANTIUM_SWORD.get())
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" # ")
+                .define('X', ModItems.ADAMANTIUM_INGOT.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ADAMANTIUM_INGOT.get()), has(ModItems.ADAMANTIUM_INGOT.get()))
+                .save(pWriter);
+
+        // SHAPELESS
+        // Materials recipes
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 9)
                 .requires(ModBlocks.SILVER_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SILVER_BLOCK.get()), has(ModBlocks.SILVER_BLOCK.get()))
